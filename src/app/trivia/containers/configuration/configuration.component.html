@@ -1,0 +1,37 @@
+<div class="container">
+    <div flex fxLayout="row" fxLayoutGap="10px">
+        <div fxFlex="70">
+            <mat-vertical-stepper #stepper>
+                <mat-step label="Step 1">
+                    <mat-select placeholder="Favorite food" (selectionChange)="nextStep($event)" [(ngModel)]="confUser.category">
+                        <mat-option *ngFor="let cat of configuration?.categories" [value]="cat.value">
+                            {{cat.label}}
+                        </mat-option>
+                    </mat-select>
+                </mat-step>
+                <mat-step label="Step 2">
+                    <mat-select placeholder="Favorite food" (selectionChange)="nextStep($event)" [(ngModel)]="confUser.type">
+                        <mat-option *ngFor="let type of configuration?.types" [value]="type.value">
+                            {{type.label}}
+                        </mat-option>
+                    </mat-select>
+                </mat-step>
+                <mat-step label="Step 3">
+                    <mat-select placeholder="Favorite food" (selectionChange)="nextStep($event)" [(ngModel)]="confUser.difficulty">
+                        <mat-option *ngFor="let df of configuration?.difficulty" [value]="df.value">
+                            {{df.label}}
+                        </mat-option>
+                    </mat-select>
+                </mat-step>
+                <mat-step label="Step 4">
+                    <mat-slider min="10" [(ngModel)]="confUser.time" max="20" thumbLabel tickInterval="1"></mat-slider>
+                </mat-step>
+            </mat-vertical-stepper>
+        </div>
+        <div>
+            <mat-nav-list>
+                <a mat-list-item *ngFor="let element of listElements">{{element}} : {{confUser[element]}}</a>
+            </mat-nav-list>
+        </div>
+    </div>
+</div>

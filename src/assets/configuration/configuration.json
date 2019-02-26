@@ -1,0 +1,60 @@
+{
+    "categories": [
+        {
+            "label": "Sports",
+            "value": "21"
+        },
+        {
+            "label": "Geography",
+            "value": "22"
+        },
+        {
+            "label": "History",
+            "value": "23"
+        },
+        {
+            "label": "Politics",
+            "value": "24"
+        },
+        {
+            "label": "Art",
+            "value": "25"
+        },
+        {
+            "label": "Celebrities",
+            "value": "26"
+        }
+    ],
+    "difficulty": [
+        {
+            "label": "Any Difficulty",
+            "value": "any"
+        },
+        {
+            "label": "Easy",
+            "value": "easy"
+        },
+        {
+            "label": "Medium",
+            "value": "medium"
+        },
+        {
+            "label": "Hard",
+            "value": "hard"
+        }
+    ],
+    "types": [
+        {
+            "label": "Any Type",
+            "value": "any"
+        },
+        {
+            "label": "Multiple Choice",
+            "value": "multiple"
+        },
+        {
+            "label": "True / False",
+            "value": "boolean"
+        }
+    ]
+}
